@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1117;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 75vh;
+}
+
+section {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section.padding-medium {
+    padding: 40px 20px;
+}
+
+section.padding-small {
+    padding: 20px 10px;
+}
+
+header,
+footer {
+    background-color: #0d1117;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1,
+footer h2 {
+    font-size: 2.2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+    border-color: #008094;
+}
+
+button {
+    cursor: pointer;
+    background-color: #008094;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #18ffff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1,
+    footer h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 32px;
+    gap: 12px;
+    align-items: center;
+  }

@@ -22,46 +22,46 @@ USE `assessment`;
 -- Dumping structure for table assessment.brand
 CREATE TABLE IF NOT EXISTS `brand` (
   `id` int NOT NULL,
-  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table assessment.brand: ~5 rows (approximately)
 INSERT INTO `brand` (`id`, `name`) VALUES
-	(1, 'Samsung'),
-	(2, 'Apple'),
-	(3, 'Honor'),
-	(4, 'Xiomi'),
-	(5, 'OnePlus');
+	(1, 'Powerlife'),
+	(2, 'Abbot'),
+	(3, 'Blackmores'),
+	(4, 'Ugoku'),
+	(5, 'Comfort');
 
--- Dumping structure for table assessment.model
-CREATE TABLE IF NOT EXISTS `model` (
+-- Dumping structure for table assessment.type
+CREATE TABLE IF NOT EXISTS `type` (
   `id` int NOT NULL,
-  `name` varchar(50) NOT NULL DEFAULT '0',
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
   `brand_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table assessment.model: ~20 rows (approximately)
-INSERT INTO `model` (`id`, `name`, `brand_id`) VALUES
-	(1, 'Galaxy A55', 1),
-	(2, 'Galaxy S24 Ultra', 1),
-	(3, 'Galaxy Note 10+', 1),
-	(4, 'Galaxy Tab A9+', 1),
-	(5, 'iPhone 15 Pro Max', 2),
-	(6, 'iPhone 11', 2),
-	(7, 'iPhone XS Max', 2),
-	(8, 'iPhone 13', 2),
-	(9, 'X7b 5G', 3),
-	(10, 'Magic6 Ultimate', 3),
-	(11, 'X50 Pro', 3),
-	(12, 'Pad 9', 3),
-	(13, 'Poco C61', 4),
-	(14, 'Civi 4 Pro', 4),
-	(15, '14', 4),
-	(16, 'Pad 6s Pro 12.4', 4),
-	(17, 'Redmi A3', 4),
-	(18, 'Ace 3V', 5),
-	(19, 'Nord CE4', 5),
-	(20, '12R', 5);
+-- Dumping data for table assessment.type: ~20 rows (approximately)
+INSERT INTO `type` (`id`, `name`, `brand_id`) VALUES
+	(1, 'K2D3', 1),
+	(2, 'Optiglo', 1),
+	(3, 'Cognimag', 1),
+	(4, 'Asta Omega', 1),
+	(5, 'Freestyle Lancets', 2),
+	(6, 'Pediasure 10+ Choco', 2),
+	(7, 'Surbex Nutrifiber', 2),
+	(8, 'Hidrasec Granules', 2),
+	(9, 'B+C', 3),
+	(10, 'Bio Zinc Plus', 3),
+	(11, 'Vitamin C', 3),
+	(12, 'Multivit + Minerals', 3),
+	(13, 'Arm Sling', 4),
+	(14, 'Abdominal Binder', 4),
+	(15, 'Compression Sleeve', 4),
+	(16, 'Finger Splint', 4),
+	(17, 'Juniorguard', 4),
+	(18, 'K9 Steel Reclining Wheelchair', 5),
+	(19, 'Electric Homecare Bed', 5),
+	(20, 'K7 Biatric Aluminium Wheelchair', 5);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
